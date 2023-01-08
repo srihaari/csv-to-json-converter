@@ -1,0 +1,14 @@
+{
+  "name": "csv-to-json-converter",
+  "version": "1.0.0",
+  "description": "CSV to JSON converter is a lightweight and powerful utility that uses node.js to convert CSV files to JSON in an easy and customizable manner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
