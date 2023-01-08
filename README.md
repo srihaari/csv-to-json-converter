@@ -60,7 +60,9 @@ The reason for this tool is that I was in charge of converting a couple of csv f
 
 ## Author
 
-
+<a href="https://github.com/srihaari" title="Srihari">
+   <img src="https://avatars.githubusercontent.com/u/54111662?v=4" style="border-radius: 12%;" width="50;" alt="fw_qaq"/>
+ </a>
 <a href="https://github.com/VishwaiOSDev" title="VishwaiOSDev">
   <img src="https://avatars.githubusercontent.com/u/71421776?v=4"style="border-radius: 12%;" width="50;" alt="fw_qaq"/>
 </a>
