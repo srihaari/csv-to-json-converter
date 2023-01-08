@@ -5,31 +5,31 @@ CSV to JSON converter is a lightweight and powerful utility that uses **node.js*
 ## Installation
 
 ```
-npm install csv-to-json-converter
+npm install @srihari_007/csv-to-json-converter
 ```
 
 ## Usage
 
 ```javascript
-const csvtojson = require("csv-to-json-converter");
+const csvtojson = require("@srihari_007/csv-to-json-converter");
 
 // Convert a CSV file at the specified file path to a JSON object
-const jsonFromFilePath = csvtojson.fromFilePath("/path/to/file.csv");
+const jsonFromFilePath = csvtojson().fromFilePath("/path/to/file.csv");
 
 // Convert a CSV string to a JSON object
-const jsonFromString = csvtojson.fromString(
+const jsonFromString = csvtojson().fromString(
   "header1,header2\nvalue1,value2\nvalue3,value4"
 );
 
 // Convert a CSV array to a JSON object
-const jsonFromArray = csvtojson.fromArray([
+const jsonFromArray = csvtojson().fromArray([
   "header1,header2",
   "value1,value2",
   "value3,value4",
 ]);
 
 // Convert a CSV two-dimensional array to a JSON object
-const jsonFromTwoDArray = csvtojson.fromTwoDimensonArray([
+const jsonFromTwoDArray = csvtojson().fromTwoDimensonArray([
   ["header1", "header2"],
   ["value1", "value2"],
   ["value3", "value4"],
