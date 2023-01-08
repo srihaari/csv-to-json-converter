@@ -1,14 +1,34 @@
 {
   "name": "csv-to-json-converter",
   "version": "1.0.0",
+  "author": "Srihari <srihari6032@gmail.com>",
+  "homepage": "https://github.com/srihaari/csv-to-json-converter",
+  "bugs": "https://github.com/srihaari/csv-to-json-converter/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srihaari/csv-to-json-converter.git"
+  },
+  "keywords": [
+    "csv",
+    "csv parser",
+    "parse csv",
+    "csvtojson",
+    "json",
+    "csv to json",
+    "csv convert",
+    "tojson",
+    "convert csv to json",
+    "csv-json",
+    "2darray-json-converter",
+    "multiline-string-json"
+  ],
   "description": "CSV to JSON converter is a lightweight and powerful utility that uses node.js to convert CSV files to JSON in an easy and customizable manner.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "jest": "^29.3.1"
   }
 }
