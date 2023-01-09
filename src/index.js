@@ -149,6 +149,7 @@ function twoDimensionArrayJSONConverter(csvFileContentAsArray) {
   jsonObject.shift();
   return jsonObject;
 }
+
 function checkIsFileValidOrNot(filePath) {
   const fileExtension = path.extname(filePath).slice(1);
   if (fileExtension != "csv" || !fileExtension == "CSV") {
@@ -191,5 +192,6 @@ function throwErrors(error) {
       throw error;
   }
 }
+
 
 module.exports = csvtojson;
