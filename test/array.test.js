@@ -9,9 +9,6 @@ const {
 
 test("Convert Json from CSV array", () => {
   const jsonData = csvtojson().fromArray(arrayOfCSV);
-
-  employeeJSON.splice(-20);
-
   expect(jsonData).toStrictEqual(employeeJSON);
 });
 

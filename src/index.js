@@ -156,6 +156,7 @@ function checkIsFileValidOrNot(filePath) {
   }
 }
 
+
 function extractValues(item) {
   // Return the value of the item string as a number if possible, or the number 0 if the item string represents the number 0
   return item.trim() === "0" ||
