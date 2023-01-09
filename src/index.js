@@ -149,12 +149,14 @@ function twoDimensionArrayJSONConverter(csvFileContentAsArray) {
   jsonObject.shift();
   return jsonObject;
 }
+
 function checkIsFileValidOrNot(filePath) {
   const fileExtension = path.extname(filePath).slice(1);
   if (fileExtension != "csv" || !fileExtension == "CSV") {
     throw new Error(`${fileExtension} file format is not supported`);
   }
 }
+
 
 function extractValues(item) {
   // Return the value of the item string as a number if possible, or the number 0 if the item string represents the number 0
@@ -190,5 +192,6 @@ function throwErrors(error) {
       throw error;
   }
 }
+
 
 module.exports = csvtojson;
