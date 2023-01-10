@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/srihaari/csv-to-json-converter.git"
   },
+  "contributors": [
+    "Vishwa <vishwa300499@icloud.com>"
+  ],
   "keywords": [
     "csv",
     "csv parser",

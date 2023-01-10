@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { isStringObject } = require("util/types");
 const { Errors, Messages } = require("./constants");
 
 /**
@@ -143,7 +142,7 @@ function twoDimensionArrayJSONConverter(csvFileContentAsArray) {
     csvData.map((item, index) => {
       // Set the key-value pair in the object using the appropriate data type
       // const checkBoolean = extractValues(item);
-      object[fileHeaders[index].trim()] = extractValues(item)
+      object[fileHeaders[index].trim()] = extractValues(item);
     });
     return object;
   });
@@ -159,35 +158,25 @@ function checkIsFileValidOrNot(filePath) {
   }
 }
 
-// const stringToBoolean = (stringValue) => {
-//   switch (stringValue?.toLowerCase()?.trim()) {
-//     case "true":
-//       return true;
-
-//     case "false":
-//       return false;
-
-//     default:
-//       return stringValue
-//   }
-// }
-
 function extractValues(item) {
-  // Return the value of the item string as a number if possible, or the number 0 if the item string represents the number 0
-  if (item.trim() === "true") {
-    return true
+  // Return the value of the item string as a number if possible, or the number 0 if the item string represents the number 0, or a boolean
+  const value = item.trim();
+
+  switch (value.toLowerCase()) {
+    case "true":
+      return true;
+    case "false":
+      return false;
+    default:
+      return value === "0" ||
+        value === "+0" ||
+        value === "-0" ||
+        value === "0.0" ||
+        value == "-0.0" ||
+        value == "+0.0"
+        ? 0
+        : Number(value) || (isNaN(Number(value)) ? value : "");
   }
-  if (item.trim() === 'false') {
-    return false
-  }
-  return item.trim() === "0" ||
-    item.trim() === "+0" ||
-    item.trim() === "-0" ||
-    item.trim() === "0.0" ||
-    item.trim() == "-0.0" ||
-    item.trim() == "+0.0"
-    ? 0
-    : Number(item.trim()) || (isNaN(Number(item.trim())) ? item.trim() : "");
 }
 
 function checkForNewLine(csvFileContentInString) {
@@ -212,6 +201,5 @@ function throwErrors(error) {
       throw error;
   }
 }
-
 
 module.exports = csvtojson;

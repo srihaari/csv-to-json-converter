@@ -38,7 +38,7 @@ const employeeJSON = [
     email: "Nessie.Septima@yopmail.com",
     email2: "Nessie.Septima@gmail.com",
     profession: "doctor",
-  }
+  },
 ];
 
 const musicGenreJSONData = [
@@ -141,7 +141,7 @@ const musicGenreJSONData = [
     obtained_date: "4-Apr",
     valence: 0.3229999999999999,
     music_genre: "Electronic",
-  }
+  },
 ];
 
 const CSVString = `id,firstname,lastname,email,email2,profession
@@ -153,8 +153,8 @@ const CSVString = `id,firstname,lastname,email,email2,profession
 
 const singleLineString = `id,firstname,lastname,email,email2,profession\n 1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\n 2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\n 3,Britni,Si,Britni.Si@yopmail.com,Britni.Si@gmail.com,police officer\n 4,Brynna,Warthman,Brynna.Warthman@yopmail.com,Brynna.Warthman@gmail.com,worker\n 5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor`;
 
-const multipleNewLineString = `id,firstname,lastname,email,email2,profession\n 1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\n 2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\n 3,Britni,Si,Britni.Si@yopmail.com,Britni.Si@gmail.com,police officer\n 4,Brynna,Warthman,Brynna.Warthman@yopmail.com,Brynna.Warthman@gmail.com,worker\n 5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor\n \n \n `
-const inBetweenNewLineString = `id,firstname,lastname,email,email2,profession\n 1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\n 2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\n 3,Britni,Si,Britni.Si@yopmail.com,Britni.Si@gmail.com,police officer\n \n \n 4,Brynna,Warthman,Brynna.Warthman@yopmail.com,Brynna.Warthman@gmail.com,worker\n 5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor\n `
+const multipleNewLineString = `id,firstname,lastname,email,email2,profession\n 1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\n 2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\n 3,Britni,Si,Britni.Si@yopmail.com,Britni.Si@gmail.com,police officer\n 4,Brynna,Warthman,Brynna.Warthman@yopmail.com,Brynna.Warthman@gmail.com,worker\n 5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor\n \n \n `;
+const inBetweenNewLineString = `id,firstname,lastname,email,email2,profession\n 1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\n 2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\n 3,Britni,Si,Britni.Si@yopmail.com,Britni.Si@gmail.com,police officer\n \n \n 4,Brynna,Warthman,Brynna.Warthman@yopmail.com,Brynna.Warthman@gmail.com,worker\n 5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor\n `;
 
 const missingComaString = `id,firstname,lastname,email,email2,profession\n 1,Rosanne,FancieRosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\n 2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\n`;
 
@@ -164,7 +164,7 @@ const arrayOfCSV = [
   "2,Elsie,Mathilde,Elsie.Mathilde@yopmail.com,Elsie.Mathilde@gmail.com,firefighter\r",
   "3,Britni,Si,Britni.Si@yopmail.com,Britni.Si@gmail.com,police officer\r",
   "4,Brynna,Warthman,Brynna.Warthman@yopmail.com,Brynna.Warthman@gmail.com,worker\r",
-  "5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor\r"
+  "5,Nessie,Septima,Nessie.Septima@yopmail.com,Nessie.Septima@gmail.com,doctor\r",
 ];
 
 const emptyLineArray = [
@@ -187,6 +187,7 @@ const emptyLineAtCenterArray = [
   "22,Maryellen,Kylander,Maryellen.Kylander@yopmail.com,Maryellen.Kylander@gmail.com,police officer\r",
   "23,Rivalee,Heidt,Rivalee.Heidt@yopmail.com,Rivalee.Heidt@gmail.com,firefighter\r",
 ];
+
 const arrayComaRemovedBetween = [
   "id,firstname,lastname,email,email2,profession\r",
   "1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\r",
@@ -224,84 +225,84 @@ const twoDArray = [
 
 const locationJSON = [
   {
-    "id": 28,
-    "age": "(223) 692-6221",
-    "gmail": "gmail",
-    "profession": "Planning Director",
-    "city": "Ulpozi",
-    "state": "AZ",
-    "country": "NE",
-    "latitude": -74.61897,
-    "longitude": 152.16858
+    id: 28,
+    age: "(223) 692-6221",
+    gmail: "gmail",
+    profession: "Planning Director",
+    city: "Ulpozi",
+    state: "AZ",
+    country: "NE",
+    latitude: -74.61897,
+    longitude: 152.16858,
   },
   {
-    "id": 56,
-    "age": "(256) 607-7589",
-    "gmail": "gmail",
-    "profession": "Product Manager",
-    "city": "Datmiruf",
-    "state": "MS",
-    "country": "GH",
-    "latitude": 32.46726,
-    "longitude": -167.77519
+    id: 56,
+    age: "(256) 607-7589",
+    gmail: "gmail",
+    profession: "Product Manager",
+    city: "Datmiruf",
+    state: "MS",
+    country: "GH",
+    latitude: 32.46726,
+    longitude: -167.77519,
   },
   {
-    "id": 28,
-    "age": "(968) 927-2942",
-    "gmail": "gmail",
-    "profession": "Managing Partner",
-    "city": "Itzupnir",
-    "state": "IN",
-    "country": "PS",
-    "latitude": -35.68292,
-    "longitude": -149.68989
+    id: 28,
+    age: "(968) 927-2942",
+    gmail: "gmail",
+    profession: "Managing Partner",
+    city: "Itzupnir",
+    state: "IN",
+    country: "PS",
+    latitude: -35.68292,
+    longitude: -149.68989,
   },
   {
-    "id": 53,
-    "age": "(835) 202-6550",
-    "gmail": "gmail",
-    "profession": "Economist",
-    "city": "Baurivo",
-    "state": "MA",
-    "country": "SY",
-    "latitude": 35.40762,
-    "longitude": -50.90459
+    id: 53,
+    age: "(835) 202-6550",
+    gmail: "gmail",
+    profession: "Economist",
+    city: "Baurivo",
+    state: "MA",
+    country: "SY",
+    latitude: 35.40762,
+    longitude: -50.90459,
   },
   {
-    "id": 51,
-    "age": "(982) 230-2595",
-    "gmail": "gmail",
-    "profession": "Podiatrist",
-    "city": "Hakebu",
-    "state": "HI",
-    "country": "BT",
-    "latitude": 39.44278,
-    "longitude": 104.08914
-  }
-]
+    id: 51,
+    age: "(982) 230-2595",
+    gmail: "gmail",
+    profession: "Podiatrist",
+    city: "Hakebu",
+    state: "HI",
+    country: "BT",
+    latitude: 39.44278,
+    longitude: 104.08914,
+  },
+];
 
 const booleanJson = [
   {
-    "id": 1,
-    "isBoolean": true
+    id: 1,
+    isBoolean: true,
   },
   {
-    "id": 2,
-    "isBoolean": true
+    id: 2,
+    isBoolean: true,
   },
   {
-    "id": 3,
-    "isBoolean": true
+    id: 3,
+    isBoolean: true,
   },
   {
-    "id": 4,
-    "isBoolean": false
+    id: 4,
+    isBoolean: false,
   },
   {
-    "id": 5,
-    "isBoolean": true
-  }
-]
+    id: 5,
+    isBoolean: true,
+  },
+];
 module.exports = {
   employeeJSON,
   CSVString,
@@ -316,5 +317,5 @@ module.exports = {
   musicGenreJSONData,
   twoDArray,
   locationJSON,
-  booleanJson
+  booleanJson,
 };
