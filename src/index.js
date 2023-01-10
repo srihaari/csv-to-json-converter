@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { isStringObject } = require("util/types");
 const { Errors, Messages } = require("./constants");
 
 /**
@@ -141,7 +142,8 @@ function twoDimensionArrayJSONConverter(csvFileContentAsArray) {
     var object = {};
     csvData.map((item, index) => {
       // Set the key-value pair in the object using the appropriate data type
-      object[fileHeaders[index].trim()] = extractValues(item);
+      // const checkBoolean = extractValues(item);
+      object[fileHeaders[index].trim()] = extractValues(item)
     });
     return object;
   });
@@ -157,9 +159,27 @@ function checkIsFileValidOrNot(filePath) {
   }
 }
 
+// const stringToBoolean = (stringValue) => {
+//   switch (stringValue?.toLowerCase()?.trim()) {
+//     case "true":
+//       return true;
+
+//     case "false":
+//       return false;
+
+//     default:
+//       return stringValue
+//   }
+// }
 
 function extractValues(item) {
   // Return the value of the item string as a number if possible, or the number 0 if the item string represents the number 0
+  if (item.trim() === "true") {
+    return true
+  }
+  if (item.trim() === 'false') {
+    return false
+  }
   return item.trim() === "0" ||
     item.trim() === "+0" ||
     item.trim() === "-0" ||

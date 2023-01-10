@@ -2,19 +2,29 @@ const csvtojson = require("../src/index");
 const employeeFilePath = "./resources/csv/employee/employee_details.csv"
 const musicFilePath = "./resources/csv/music/music_genre.csv"
 const locationFilePath = "./resources/csv/location/geolocation.csv"
+const booleanFilepath = "./resources/csv/boolean/isBoolean.csv"
 
 
-
-const { employeeJSON, musicGenreJSONData, locationJSON } = require("../resources/mock.js");
+const { employeeJSON, musicGenreJSONData, booleanJson, locationJSON } = require("../resources/mock.js");
 
 test("Convert to JSON from filepath", () => {
   const employeeJSONData = csvtojson().fromFilePath(employeeFilePath);
   const musicJSONData = csvtojson().fromFilePath(musicFilePath);
-  const locationJSONData = csvtojson().fromFilePath(locationFilePath);
 
   expect(musicJSONData).toStrictEqual(musicGenreJSONData);
   expect(employeeJSONData).toStrictEqual(employeeJSON);
-  expect(locationJSONData).toStrictEqual(locationJSON)
+});
+
+test("To check wheather it can change convert Number", () => {
+  const locationJSONData = csvtojson().fromFilePath(locationFilePath);
+
+  expect(locationJSONData).toStrictEqual(locationJSON);
+});
+
+test("To check wheather it can change convert boolean", () => {
+  const booleanJSONData = csvtojson().fromFilePath(booleanFilepath);
+
+  expect(booleanJSONData).toStrictEqual(booleanJson);
 });
 
 test("Should throw error providing invalid filepath", () => {
