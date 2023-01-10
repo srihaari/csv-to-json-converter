@@ -6,12 +6,20 @@ const {
   multipleNewLineString,
   inBetweenNewLineString,
   missingComaString,
+  booleanstring,
+  booleanJson,
 } = require("../resources/mock");
 
 test("Convert to JSON from CSV string", () => {
   const jsonData = csvtojson().fromString(CSVString);
 
   expect(jsonData).toStrictEqual(employeeJSON);
+});
+
+test("Convert to JSON from CSV string", () => {
+  const jsonData = csvtojson().fromString(booleanstring);
+
+  expect(jsonData).toStrictEqual(booleanJson);
 });
 
 test("Convert to JSON from CSV singleLineString", () => {

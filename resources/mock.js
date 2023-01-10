@@ -177,6 +177,18 @@ const emptyLineArray = [
   "",
 ];
 
+const booleanstring = `id,first_name,last_name,boolean,isStrig,ip_address
+1,Carri,Arnely,false,true,208.6.99.151
+2,Erl,Jewster,true,true,54.108.74.139
+3,Grace,Strathman,false,false,102.190.170.146
+4,Susi,Dmitrievski,true,true,234.214.21.209
+5,Michaella,Sket,false,false,65.206.27.155
+6,Amerigo,Clarycott,true,true,205.120.3.254
+7,Jemimah,Gooden,true,false,96.12.26.23
+8,Doria,Roakes,true,true,36.225.210.54
+9,Adelheid,Foye,true,true,237.44.13.18
+10,Rodrigo,Orwell,false,true,52.122.7.34`;
+
 const emptyLineAtCenterArray = [
   "id,firstname,lastname,email,email2,profession\r",
   "1,Rosanne,Fancie,Rosanne.Fancie@yopmail.com,Rosanne.Fancie@gmail.com,firefighter\r",
@@ -284,25 +296,86 @@ const locationJSON = [
 const booleanJson = [
   {
     id: 1,
-    isBoolean: true,
+    first_name: "Carri",
+    last_name: "Arnely",
+    boolean: false,
+    isStrig: true,
+    ip_address: "208.6.99.151",
   },
   {
     id: 2,
-    isBoolean: true,
+    first_name: "Erl",
+    last_name: "Jewster",
+    boolean: true,
+    isStrig: true,
+    ip_address: "54.108.74.139",
   },
   {
     id: 3,
-    isBoolean: true,
+    first_name: "Grace",
+    last_name: "Strathman",
+    boolean: false,
+    isStrig: false,
+    ip_address: "102.190.170.146",
   },
   {
     id: 4,
-    isBoolean: false,
+    first_name: "Susi",
+    last_name: "Dmitrievski",
+    boolean: true,
+    isStrig: true,
+    ip_address: "234.214.21.209",
   },
   {
     id: 5,
-    isBoolean: true,
+    first_name: "Michaella",
+    last_name: "Sket",
+    boolean: false,
+    isStrig: false,
+    ip_address: "65.206.27.155",
+  },
+  {
+    id: 6,
+    first_name: "Amerigo",
+    last_name: "Clarycott",
+    boolean: true,
+    isStrig: true,
+    ip_address: "205.120.3.254",
+  },
+  {
+    id: 7,
+    first_name: "Jemimah",
+    last_name: "Gooden",
+    boolean: true,
+    isStrig: false,
+    ip_address: "96.12.26.23",
+  },
+  {
+    id: 8,
+    first_name: "Doria",
+    last_name: "Roakes",
+    boolean: true,
+    isStrig: true,
+    ip_address: "36.225.210.54",
+  },
+  {
+    id: 9,
+    first_name: "Adelheid",
+    last_name: "Foye",
+    boolean: true,
+    isStrig: true,
+    ip_address: "237.44.13.18",
+  },
+  {
+    id: 10,
+    first_name: "Rodrigo",
+    last_name: "Orwell",
+    boolean: false,
+    isStrig: true,
+    ip_address: "52.122.7.34",
   },
 ];
+
 module.exports = {
   employeeJSON,
   CSVString,
@@ -317,5 +390,6 @@ module.exports = {
   musicGenreJSONData,
   twoDArray,
   locationJSON,
+  booleanstring,
   booleanJson,
 };

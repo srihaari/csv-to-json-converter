@@ -1,11 +1,15 @@
 const csvtojson = require("../src/index");
-const employeeFilePath = "./resources/csv/employee/employee_details.csv"
-const musicFilePath = "./resources/csv/music/music_genre.csv"
-const locationFilePath = "./resources/csv/location/geolocation.csv"
-const booleanFilepath = "./resources/csv/boolean/isBoolean.csv"
+const employeeFilePath = "./resources/csv/employee/employee_details.csv";
+const musicFilePath = "./resources/csv/music/music_genre.csv";
+const locationFilePath = "./resources/csv/location/geolocation.csv";
+const booleanFilepath = "./resources/csv/boolean/isBoolean.csv";
 
-
-const { employeeJSON, musicGenreJSONData, booleanJson, locationJSON } = require("../resources/mock.js");
+const {
+  employeeJSON,
+  musicGenreJSONData,
+  booleanJson,
+  locationJSON,
+} = require("../resources/mock.js");
 
 test("Convert to JSON from filepath", () => {
   const employeeJSONData = csvtojson().fromFilePath(employeeFilePath);
