@@ -52,7 +52,7 @@ The possible error messages are:
 - The `fromFilePath` method expects the file path to be specified as a string.
 - The `fromString`, `fromArray`, and `fromTwoDimensonArray` methods expect the CSV data to be in the form of a string, array, or two-dimensional array, respectively.
 - The first row of the CSV data is assumed to contain the headers.
-- The values in the JSON objects will be of the appropriate data type (e.g. numbers will be converted to numbers, strings will be left as strings).
+- The values in the JSON objects will be of the appropriate data type (e.g. numbers will be converted to numbers, `True/False` will be converted to boolean, strings will be left as strings).
 
 ## Motivation
 
